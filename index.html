@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Ajout de contact</title>
-    <meta http-equiv="refresh" content="0; url=contact.vcf">
+  <meta charset="utf-8">
+  <title>Ajout de contact</title>
+  <script>
+    // Redirection automatique vers le fichier vCard
+    window.onload = function() {
+      window.location.href = "contact.vcf";
+    }
+  </script>
 </head>
-<body>
-    <p>Si le téléchargement ne démarre pas automatiquement, <a href="contact.vcf">cliquez ici</a>.</p>
+<body style="font-family: sans-serif; text-align: center; padding: 40px;">
+  <h1>📇 Ajout du contact</h1>
+  <p>Si le téléchargement ne démarre pas automatiquement, 
+     <a href="contact.vcf" download>Cliquez ici pour télécharger le contact</a>.
+  </p>
 </body>
 </html>
